@@ -24,9 +24,15 @@
     </figure>
     <section id="services" class="services">
         <div class="services-title-container">
-            <h3>Install</h3>
-            <h3>Maintenance</h3>
-            <h3>Commercial</h3>
+            <div id="selectInstall">
+                <h3 class="installClick">Install</h3>
+            </div>
+            <div id="selectMaintenance">
+                <h3 class="installClick">Maintenance</h3>
+            </div> 
+            <div id="selectCommercial">
+                <h3 class="installClick">Commercial</h3>
+            </div>
         </div>
         <div class="services-container">
             <!-- install -->
@@ -100,10 +106,7 @@
         </div>
     </section>
     <h3 class="meet-our-team">Meet Our Team</h3>
-    <section id="team" class="meet-our-team">
-        <div id="team-left">
-            <!-- insert left -->
-        </div>
+    <section id="team" class="team meet-our-team">
         <div class="employee">
             <figure>
                 <img src="/assets/the-rock.jpg" alt="Dwayne, The ROCK, Johnson">
@@ -113,10 +116,22 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque est quae eos iure quidem, eligendi quia magnam iusto. Quisquam dolorem nemo itaque repellendus praesentium totam explicabo tempora. Vitae esse alias sequi. Culpa voluptatum eaque quibusdam illo provident optio. Sit, laboriosam ullam? Dolor dolorem libero eum. Rerum pariatur, voluptatibus, corporis tenetur veniam distinctio, velit amet sit atque assumenda asperiores vel.</p>
             </div>
         </div>
-        <div id="team-right">
-            <!-- insert right -->
-        </div>
+        <!-- <a id="prev" class="control prev"></a>
+        <a id="next" class="control next"></a> -->
     </section>
+    <div id="slider" class="slider">
+        <div class="wrapper">
+          <div id="slides" class="slides">
+            <span class="slide">Slide 1</span>
+            <span class="slide">Slide 2</span>
+            <span class="slide">Slide 3</span>
+            <span class="slide">Slide 4</span>
+            <span class="slide">Slide 5</span>
+          </div>
+        </div>
+        <a id="prev" class="control prev"></a>
+        <a id="next" class="control next"></a>
+      </div>
     <section class="reviews">
         <!-- yelp reviews embedded -->
         <div>
@@ -161,5 +176,6 @@
     <footer>
         <span>&#169; 2020 Patriot Air Conditioning LLC <br> All Rights Reserved.</span>
     </footer>
+    <script type="text/javascript" src='/public/js/main.js'></script>
 </body>
 </html>
