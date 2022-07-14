@@ -17,3 +17,9 @@ Design:
 
 Other:
 - Employee email signature
+
+## Changelog
+
+7/14/2022:
+
+- improved design

@@ -18,6 +18,11 @@ body * {
     box-sizing: border-box;
 }
 
+body > * {
+    margin-top: 2rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+
 header,
 section.services,
 section.discount,
@@ -88,19 +93,21 @@ section.services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding: 2rem;
 }
 
 div.services-title-container {
     display: flex;
-    justify-content: center;
     width: 60%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+
+.services-title-container > div {
+    width: 33.3333%;
 }
 
 .services-title-container h3 {
-    width: 20rem;
     text-align: center;
-    border: 1px solid rgb(211, 169, 169);
     font-size: 2rem;
     padding: 1rem;
 }
@@ -115,6 +122,9 @@ div.services-title-container {
 .service-body-container {
     width: 100%;
     display: flex;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    margin-top: 2rem;
+    height: 30rem;
 }
 
 .service-body-container > div {
@@ -173,12 +183,14 @@ div.services-title-container {
 h3.meet-our-team {
     text-align: center;
     font-size: 2.4rem;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 section.meet-our-team {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .employee-photo,
@@ -200,15 +212,14 @@ section.meet-our-team {
 .slider {
     position: relative;
     width: 1000px;
-    height: 400px;
     box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    margin-bottom: 2rem;
   }
   
   .wrapper {
     overflow: hidden;
     position: relative;
     width: 1000px;
-    height: 400px;
     z-index: 1;
   }
   
@@ -226,16 +237,14 @@ section.meet-our-team {
   
   .slide {
     width: 1000px;
-    height: 400px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 1s;
     position: relative;
-    background: #FFCF47;
     border-radius: 2px;
-    padding: 4rem;
+    padding: 2rem 4rem;
   }
   
   .control {
@@ -297,12 +306,11 @@ section.meet-our-team {
     flex-direction: column;
     justify-items: center;
     align-content: center;
-    margin-top: 4rem;
 }
 
 .contact-us-head > * {
     text-align: center;
-    padding: 1rem;
+    padding-top: 2rem;
     font-size: 2rem;
 }
 
@@ -314,6 +322,7 @@ section.meet-our-team {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
 }
 
 .inputs {
@@ -359,5 +368,6 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
