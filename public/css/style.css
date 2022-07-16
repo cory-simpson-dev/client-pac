@@ -5,12 +5,11 @@ html {
 }
 
 body {
-    min-width: 40rem;
     width: 100vw;
-    max-width: 128rem;
+    max-width: 124rem;
     display: flex;
     flex-direction: column;
-
+    padding: 0 2rem;
 }
 
 body,
@@ -73,6 +72,22 @@ h1 span {
 nav a {
     font-size: 2rem;
     text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 700px) {
+    
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    
 }
 
 /* logo figure */
@@ -84,7 +99,7 @@ nav a {
 }
 
 .logo img {
-    height: 100%;
+    width: 100%;
 }
 
 /* services */
@@ -124,7 +139,6 @@ div.services-title-container {
     display: flex;
     box-shadow: 3px 3px 10px rgba(0,0,0,.2);
     margin-top: 2rem;
-    height: 30rem;
 }
 
 .service-body-container > div {
@@ -141,7 +155,38 @@ div.services-title-container {
 }
 
 .figure-body img {
-    height: 24rem;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    div.services-title-container {
+        display: flex;
+        width: 100%;
+        box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    }
+    
+    .services-title-container h3 {
+        font-size: 1.6rem;
+    }
+    
+    .services-container {
+        width: 100%;
+    }
+    
+    .service-body-container {
+        flex-direction: column;
+    }
+    
+    .service-body-container > div {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .service-body {
+        font-size: 1.6rem;
+    }
+
 }
 
 #pac-member,
@@ -173,6 +218,19 @@ div.services-title-container {
     font-size: 2rem;
 }
 
+@media (max-width: 1100px) {
+    
+    .discount {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .discount > div {
+        width: 100%;
+    }
+}
+
 .discount h2 {
     font-size: 2.4rem;
     margin: 1rem 0;
@@ -196,11 +254,10 @@ section.meet-our-team {
 .employee-photo,
 .employee-body {
     width: 50%;
-
 }
 
 .employee-photo img {
-    height: 30rem;
+    width: 100%;
     box-shadow: 3px 3px 10px rgba(0,0,0,.2);
 }
 
@@ -210,87 +267,206 @@ section.meet-our-team {
 }
 
 .slider {
-    position: relative;
-    width: 1000px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
-    margin-bottom: 2rem;
-  }
-  
-  .wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 1000px;
-    z-index: 1;
-  }
-  
-  .slides {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: -1000px;;
-    width: 10000px;
-  }
-  
-  .slides.shifting {
+  position: relative;
+  width: 1000px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  z-index: 1;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -1000px;;
+  width: 10000px;
+}
+
+.slide {
+  width: 1000px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  position: relative;
+  border-radius: 2px;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 1100px) {
+    
+    .employee-photo,
+    .employee-body {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .slider {
+      position: relative;
+      width: 600px;
+      box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+      margin-bottom: 2rem;
+    }
+    
+    .wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 600px;
+      z-index: 1;
+    }
+    
+    .slides {
+      display: flex;
+      position: relative;
+      top: 0;
+      left: -600px;;
+      width: 10000px;
+    }
+    
+    .slide {
+      width: 600px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+      position: relative;
+      border-radius: 2px;
+      padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    body {
+        padding: 0;
+    }
+
+    .employee-photo,
+    .employee-body {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .employee-body span,
+    .employee-body p {
+        font-size: 1.6rem;
+    }
+
+    .slider {
+      position: relative;
+      width: 300px;
+      box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+      margin-bottom: 2rem;
+    }
+    
+    .wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      z-index: 1;
+    }
+    
+    .slides {
+      display: flex;
+      position: relative;
+      top: 0;
+      left: -300px;;
+      width: 10000px;
+    }
+    
+    .slide {
+      width: 300px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+      position: relative;
+      border-radius: 2px;
+      padding: 2rem 4rem;
+    }
+}
+
+.slides.shifting {
     transition: left .2s ease-out;
-  }
-  
-  .slide {
-    width: 1000px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s;
-    position: relative;
-    border-radius: 2px;
-    padding: 2rem 4rem;
-  }
-  
-  .control {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 50px;
-    margin-top: -20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-  }
-  
-  .prev,
-  .next {
-    background-size: 22px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  
-  .prev {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-    left: -20px;
-  }
-  
-  .next {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-    right: -20px;
-  }
-  
-  .prev:active,
-  .next:active {
-    transform: scale(.8);
-  }
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -20px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -20px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(.8);
+}
 
 /* reviews */
 
 .reviews {
     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .reviews > div {
-    width: 33.3333%;
-    padding: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1150px) {
+    
+    .reviews {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        padding: 2rem;
+    }
+
+    .reviews > div {
+        width: 35rem;
+    }
+
 }
 
 /* contact form */
@@ -326,9 +502,19 @@ section.meet-our-team {
 }
 
 .inputs {
-    width: 36rem;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 .inputs > div {
