@@ -20,6 +20,14 @@ Other:
 
 ## Changelog
 
-7/14/2022:
+08/02/2022:
+
+- added favicon
+
+07/16/2022:
+
+- added media queries
+
+07/14/2022:
 
 - improved design
